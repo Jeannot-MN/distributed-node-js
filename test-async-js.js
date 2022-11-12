@@ -6,8 +6,6 @@ wait(500);
 console.log('E');
 
 
-
-
 function wait(timeInMillis) {
     let endTime = new Date().getTime() + timeInMillis;
 
