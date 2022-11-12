@@ -1,9 +1,9 @@
-setTimeout(() => console.log('A'), 0);
-console.log('B');
-setTimeout(() => console.log('C'), 100);
-setTimeout(() => console.log('D'), 0);
+setTimeout(() => console.log(new Date().getTime() + '--------->A'), 0);
+console.log(new Date().getTime() + '--------->B');
+setTimeout(() => console.log(new Date().getTime() + '--------->C'), 100);
+setTimeout(() => console.log(new Date().getTime() + '--------->D'), 0);
 wait(500);
-console.log('E');
+console.log(new Date().getTime() + '--------->E');
 
 
 function wait(timeInMillis) {
