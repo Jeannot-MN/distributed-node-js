@@ -4,6 +4,10 @@ console.log("POLL STAGE");
 
 setImmediate(() => {
     console.log("CHECK STAGE");
+
+    setImmediate(() => {
+        console.log("CHECK STAGE 2");
+    });
 });
 
 setTimeout(() => {
