@@ -9,8 +9,7 @@ cluster.setupMaster({
 cluster.fork();
 cluster.fork();
 
-cluster
-    .on('disconnect', (worker) => {
+cluster.on('disconnect', (worker) => {
         console.log('Disconnecting ', worker.id);
     })
     .on('exit', (worker, code, signal) => {
