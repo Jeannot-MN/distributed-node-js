@@ -9,6 +9,5 @@ console.log((new Date().getTime() - startingTime) + '--------->E');
 
 function wait(timeInMillis) {
     let endTime = new Date().getTime() + timeInMillis;
-
     while (new Date().getTime() < endTime) {}
 }
